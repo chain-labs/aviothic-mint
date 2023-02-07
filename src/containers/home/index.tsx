@@ -19,6 +19,8 @@ import {
   HERO_MEDIA,
   INSTAGRAM_URL,
   LOGO_MEDIA,
+  SHOW_TOKENS_CLAIMED,
+  SHOW_TOTAL_TOKENS,
   TEXT_COLOR,
   TOKEN_COUNTER_COLOR,
   TWITTER_URL,
@@ -222,13 +224,17 @@ const HomeContainer = () => {
         <Box as="h1" id="hero-text" color={TEXT_COLOR}>
           {COLLECTION_NAME}
         </Box>
-        {connected ? (
+        {connected && SHOW_TOKENS_CLAIMED ? (
           <Box
             as="h3"
             id="counter"
             fontSize="1.8rem"
             color={TOKEN_COUNTER_COLOR}
-          >{`Tokens Claimed: ${totalSupply}/${maximumTokens}`}</Box>
+          >
+            {SHOW_TOTAL_TOKENS
+              ? `Tokens Claimed: ${totalSupply}/${maximumTokens}`
+              : `Tokens Claimed: ${totalSupply}`}
+          </Box>
         ) : null}
       </Box>
       <Box className="mint-section">

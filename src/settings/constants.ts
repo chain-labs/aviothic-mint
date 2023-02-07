@@ -7,6 +7,9 @@ export const INPUT_BORDER_COLOR = TEXT_COLOR;
 
 export const COLLECTION_NAME = "Aviothic";
 
+export const SHOW_TOKENS_CLAIMED = true;
+export const SHOW_TOTAL_TOKENS = false;
+
 export const HERO_MEDIA =
   "https://ik.imagekit.io/chainlabs/Mint_Pages/Photograph_NFT/hero_image_3cJoz7tCbC.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1675256707102";
 export const LOGO_MEDIA =
