@@ -4,7 +4,7 @@ import { DiscordFill, InstagramFill, TwitterFill } from "akar-icons";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 // import DiscordFill from "../components/svgs/discord";
-import { CONTRACT_ADDRESS, getEtherscanUrl } from "../../constants";
+import { CONTRACT_ADDRESS, getEtherscanUrl, SIMPLR_URL } from "../../constants";
 import useContract from "../../hooks/useContract";
 import useWallet from "../../hooks/useWallet";
 
@@ -275,7 +275,7 @@ const HomeContainer = () => {
         )}
       </Box>
       <div className="simplr">
-        <a href="https://simplrcollection.com" target="_blank" rel="noreferrer">
+        <a href={SIMPLR_URL} target="_blank" rel="noreferrer">
           <Image
             src="/simplr_brand.svg"
             height={41}
